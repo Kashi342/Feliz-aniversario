@@ -1,0 +1,223 @@
+body {
+  background: #fff0f5;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header{
+    background-color: #fff0f5;
+    color: #d6336c;
+    padding: 20px;
+    text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #ffe4e1;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 192, 203, 0.5);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  color: #d6336c;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #8b0000;
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day-name {
+  font-weight: bold;
+  color: #d6336c;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.day {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  color: #333;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.day.special {
+  background: #ff69b4;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.day.special::after {
+  content: "💘";
+  position: absolute;
+  top: 5px;
+  right: 8px;
+}
+
+#hero{
+    text-align: center;
+    padding: 50px;
+    background-color: #ffe6f0;
+}
+
+#hero img{
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    border-radius: 100px;
+    margin-top: 15px;
+}
+
+#imagem-passada{
+    width: 100%;
+    overflow: hidden;
+    background-color: #ffe4e1;
+}
+
+#imagem-passada img{
+  width: 300px;
+  height: 300px;
+}
+
+#slides{
+    display: flex;
+    width: 100%;
+    animation: slide 120s infinite linear;
+}
+
+#slides img{
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+@keyframes slide {
+    0% {transform: translateX(0%);}
+    33% {transform: translateX(-100%);}
+    66% {transform: translateX(-200%);}
+    100%{transform: translateX(0%);}
+}
+
+#logo{
+    width: 100px;
+    height: 200px;
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 100px;
+}
+
+.botao-amor {
+  background: linear-gradient(135deg, #ffb6c1, #ff69b4);
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 8px 15px rgba(255, 105, 180, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.botao-amor::after {
+  content: "❤️";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1.5em;
+  animation: pulse 1.5s infinite;
+}
+
+.botao-amor:hover {
+  background: linear-gradient(135deg, #ff69b4, #ff1493);
+  box-shadow: 0 10px 20px rgba(255, 20, 147, 0.4);
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+footer{
+    background-color: #ff78c0;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.body-sobre {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #ffe4e1, #ffb6c1);
+  color: #4b2c2c;
+}
+
+.container-sobre {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff0f5;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.4);
+}
+
+.container-sobre h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #d6336c;
+  margin-bottom: 20px;
+}
+
+.historia, .mensagem h2 {
+  color: #c71585;
+  margin-top: 30px;
+}
+
+.historia, .mensagem p, ul {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.historia, .mensagem ul {
+  list-style-type: "💗 ";
+  padding-left: 20px;
+}
+
+.intro {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.mensagem {
+  background-color: #ffe4e1;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 10px rgba(255, 105, 180, 0.2);
+}
